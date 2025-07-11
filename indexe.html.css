@@ -1,0 +1,111 @@
+[12/07/2025 00:07:22] ~18002428478: 1.⁠ ⁠HTML (structure simple)
+
+⁠ html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bienvenue sur AVK Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site AVK Design !</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <p>Site en construction...</p>
+  </section>
+
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <p>Voici quelques exemples de mes réalisations.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <button id="contactBtn">Cliquez ici</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ ⁠
+
+---
+
+2.⁠ ⁠CSS (style.css)
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0; padding: 0;
+[12/07/2025 00:07:27] ~18002428478: color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+
+⁠ ---
+
+3. JavaScript (script.js)
+
+ ⁠js
+document.getElementById('contactBtn').addEventListener('click', () => {
+  alert('Merci de vouloir me contacter !');
+});
+```
